@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 base_directory = "."  # Root directory
 second_brain_file = os.path.join(base_directory, "second_brain")
 output_file = os.path.join(base_directory, "second_brain_combined.txt")
-exclude_files = ["README.md", "readme.md"]
+exclude_files = ["README.md", "readme.md", "README.txt", "readme.txt"]
 
 # Subdirectories and their order
 sections = {
@@ -74,8 +74,14 @@ with open(output_file, "w", encoding="utf-8") as combined_file:
             # Process all files in the directory
             for file_name in sorted(os.listdir(folder_path)):
                 file_path = os.path.join(folder_path, file_name)
-                if file_name in exclude_files or not os.path.isfile(file_path):
-                    continue
+                
+                # Ignore any README file regardless of extension
+                if file_name.lower().startswith("readme"):
+                    continue  # Skip README files
+                
+                # Ensure only files are processed                
+                if not os.path.isfile(file_path):
+                    continue  # Skip if it's not a file
 
                 try:
                     # Check the first line of the file for "[exclude]"
