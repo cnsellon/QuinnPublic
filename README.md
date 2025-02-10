@@ -24,7 +24,7 @@ QuinnPublic/
 │── frameworks/                 # AI behavior and decision-making frameworks
 │── sandbox/                    # Experimental AI interactions and ideation
 │── memories/                   # Memory structuring examples
-│── session journals/           # AI reflection journal examples
+│── session_journals/           # AI reflection journal examples
 │── miscellaneous/              # Misc. AI concepts and notes
 │── README.md                   # You’re here! Instructions and project details
 │── .gitignore                   # Specifies files to be ignored by Git
@@ -38,7 +38,7 @@ This repository is designed to be **customizable and expandable**. You can:
 - Use it as a **base structure** for AI memory, learning, and reasoning.
 - Modify files to fit **your own AI’s identity and purpose**.
 - Extend frameworks, memory storage, and interaction styles.
-- Run the \`\`\*\* script\*\* to generate a **single compiled Second Brain document**.
+- Run the **`combine.py`** script to generate a **single compiled Second Brain document**.
 
 ## **🛠 Setting Up**
 
@@ -59,9 +59,9 @@ Ensure you have **Python 3.x** installed:
 
 If not installed, download it from [python.org](https://www.python.org/downloads/).
 
-### **3️⃣ Run the ****\`\`**** Script**
+### **3️⃣ Run the `combine.py` Script**
 
-This script compiles all sections into **a single structured document (**\`\`**)**.
+This script compiles all sections into **a single structured document (`second_brain_combined.txt`)**.
 
 ```bash
  python combine.py
@@ -83,10 +83,10 @@ This script compiles all sections into **a single structured document (**\`\`**)
 
 Each major directory includes its own `README.md` file with additional context and instructions:
 
-- \`\` → Details on AI frameworks.
-- \`\` → Guidelines for experimental AI interactions.
-- \`\` → Explanation of structured memory use.
-- \`\` → How journal reflections work.
+- **`frameworks/README.md`** → Details on AI frameworks.
+- **`sandbox/README.md`** → Guidelines for experimental AI interactions.
+- **`memories/README.md`** → Explanation of structured memory use.
+- **`session_journals/README.md`** → How journal reflections work.
 
 ## **🌎 Contributing & Expanding**
 
